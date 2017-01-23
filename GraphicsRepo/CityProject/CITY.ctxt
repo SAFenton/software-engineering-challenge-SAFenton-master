@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ init()
+comment0.text=\r\n\ \ \ Creates\ the\ properties\ of\ the\ city\:\ sky,\ mountains,\ buildings\ w/windows,\ ocean\r\n\ \ \ @param\r\n\ \ \ @return\r\n
+comment1.params=page
+comment1.target=void\ paint(java.awt.Graphics)
+comment1.text=\r\n\ \ \ Paints\ all\ the\ components\r\n\ \ \ \ @return\r\n\ \ \ \ @param\ Graphics\ page\r\n
+numComments=2

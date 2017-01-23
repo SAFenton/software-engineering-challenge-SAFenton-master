@@ -3,18 +3,14 @@ import java.util.Random;
 import java.applet.Applet;
 import java.awt.*;
 
-
 public class onepartbuildings
 {
+   /*///////////////////
+   Building Variables
+   *////////////////////
    private int x, y, w, h;
-   private Color c;
-   
-   
-   
+   private Color c, wc;
 
-   //-----------------------------------------------------------------
-   //  Sets up the stick figure's primary attributes.
-   //-----------------------------------------------------------------
    public onepartbuildings (int posx, int posy, int width, int height, Color color)
    {
        x = posx;
@@ -22,45 +18,37 @@ public class onepartbuildings
        w = width;
        h = height;
        c = color;
-       
-      
-       int num = h/25;
-       
-       /*
-       windows[] allwindows = new windows[25*num];
-      
-      for (windows i: allwindows)
-      {
-          widnows awindow = new CircleComponent();
-          i = acircle;
-          
-          frame.add(i);
-          frame.setVisible(true);
-        }
-        
-        */
    }
 
-   //-----------------------------------------------------------------
-   //  Draws the mountains
-   //-----------------------------------------------------------------
    public void draw (Graphics page)
    {  
-      
-       
        page.setColor(c);
        page.fillRect(x, y, w, h);
-       
-       
-       
-       
-       
-       
-       
-       
-       //g2.setPaint(bggradient);
-       //Rectangle backgroundrec = new Rectangle(0,0,700,400);
-       //g2.fill(backgroundrec);
 
+       /*///////////////////
+       Windows
+       *////////////////////
+       Color wc = new Color (255,255,102);
+       int num = h/15;
+       int wx = x + 8; //window x position
+       int wy = y+8; //window y position
+       int ww = 10; //window width
+       int wh = 10; //window height  
+       for (int column = 0; column < num; column++)
+       {
+    		for (int row = 0; row< 6; row++)
+    		{
+    			wx = wx; 
+    			page.setColor(wc);
+       			page.fillRect(wx, wy, ww, wh);
+    			wx = wx+15;
+            }
+    		wy = wy + 15;
+    		wx = x + 8;
+    		if (wy >380)
+    			{
+    				column = num;
+       			}
+       }
    }
 }
